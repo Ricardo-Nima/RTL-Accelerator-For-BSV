@@ -1,0 +1,637 @@
+$date
+	Wed Jan  4 16:20:01 2023
+$end
+$version
+	Bluespec VCD dumper 2.1
+$end
+$timescale
+	1 us
+$end
+$scope module main $end
+$scope module top $end
+$var reg 1 ! CLK $end
+$var reg 1 ! CLK $end
+$var reg 1 " RST_N $end
+$var reg 1 # WILL_FIRE_RL_action_l15c20 $end
+$var reg 1 $ WILL_FIRE_RL_action_l16c20 $end
+$var reg 1 % WILL_FIRE_RL_action_l17c20 $end
+$var reg 1 2 abort $end
+$var reg 1 3 running $end
+$var reg 1 4 start_reg $end
+$var reg 1 5 start_reg_1 $end
+$var reg 1 6 start_reg_2 $end
+$var reg 1 7 start_wire $end
+$var reg 1 8 state_can_overlap $end
+$var reg 1 9 state_fired $end
+$var reg 1 : state_fired_1 $end
+$var reg 3 ; state_mkFSMstate $end
+$var reg 1 < state_overlap_pw $end
+$var reg 1 = state_set_pw $end
+$scope module spi_writer $end
+$var reg 1 ! CLK $end
+$var reg 1 > RST_N $end
+$var reg 1 ? WILL_FIRE_RL_spiFsm_action_l25c13 $end
+$var reg 1 @ WILL_FIRE_RL_spiFsm_action_l27c13 $end
+$var reg 1 A WILL_FIRE_RL_spiFsm_action_l31c13 $end
+$var reg 1 B WILL_FIRE_RL_spiFsm_action_l36c15 $end
+$var reg 1 C WILL_FIRE_RL_spiFsm_action_l37c13 $end
+$var reg 1 D WILL_FIRE_RL_spiFsm_action_l38c14 $end
+$var reg 8 E bs__h15978 $end
+$var reg 1 F spiFsm_abort_wget____d5 $end
+$var reg 1 G spiFsm_abort_whas_AND_spiFsm_abort_wget_OR_spi_ETC___d35 $end
+$var reg 1 H spiFsm_abort_whas_AND_spiFsm_abort_wget_OR_spi_ETC___d60 $end
+$var reg 1 I spiFsm_abort_whas_AND_spiFsm_abort_wget___d6 $end
+$var reg 1 J spiFsm_abort_whas____d4 $end
+$var reg 1 K spiFsm_start_reg_1__h15108 $end
+$var reg 1 L spiFsm_start_reg__h17279 $end
+$var reg 1 M spiFsm_state_fired__h15110 $end
+$var reg 1 N spiFsm_state_mkFSMstate_read__1_EQ_6___d34 $end
+$var reg 4 O spiFsm_state_mkFSMstate_read____d31 $end
+$var reg 32 P x__h16008 $end
+$var reg 32 a cnt $end
+$var reg 1 b mosi $end
+$var reg 1 c sck $end
+$var reg 1 d spiFsm_abort $end
+$var reg 1 e spiFsm_start_reg $end
+$var reg 1 f spiFsm_start_reg_1 $end
+$var reg 1 g spiFsm_start_reg_2 $end
+$var reg 1 h spiFsm_start_wire $end
+$var reg 1 i spiFsm_state_can_overlap $end
+$var reg 1 j spiFsm_state_fired $end
+$var reg 1 k spiFsm_state_fired_1 $end
+$var reg 4 l spiFsm_state_mkFSMstate $end
+$var reg 1 m spiFsm_state_overlap_pw $end
+$var reg 1 n spiFsm_state_set_pw $end
+$var reg 1 o ss $end
+$var reg 8 p wdata $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+1!
+0"
+0#
+0$
+0%
+x2
+03
+04
+05
+x6
+x7
+18
+09
+x:
+b0 ;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+b10101010 E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+b1010 O
+b10101010101010101010101010101010 P
+b111 a
+1b
+1c
+xd
+0e
+0f
+xg
+xh
+1i
+0j
+xk
+b0 l
+0m
+0n
+1o
+b0 p
+b0 E
+1G
+1H
+b0 O
+b111 P
+#5
+0!
+1"
+1>
+#10
+1#
+16
+17
+1:
+1=
+1!
+13
+14
+#15
+0!
+#20
+0#
+x6
+x7
+x:
+0=
+1?
+b1110010 E
+1L
+1g
+1h
+1k
+1n
+1!
+04
+15
+19
+b1 ;
+1e
+b1110010 p
+#25
+0!
+#30
+0?
+1@
+0G
+0H
+1K
+0L
+1M
+b1 O
+xg
+xh
+1!
+05
+09
+0e
+1f
+1j
+b1 l
+0o
+#35
+0!
+#40
+0@
+1A
+0K
+b10 O
+1!
+0b
+0c
+0f
+b10 l
+#45
+0!
+#50
+1@
+0A
+b11 O
+b110 P
+1!
+b110 a
+1c
+b11 l
+#55
+0!
+#60
+0@
+1A
+b10 O
+1!
+1b
+0c
+b10 l
+#65
+0!
+#70
+1@
+0A
+b11 O
+b101 P
+1!
+b101 a
+1c
+b11 l
+#75
+0!
+#80
+0@
+1A
+b10 O
+1!
+0c
+b10 l
+#85
+0!
+#90
+1@
+0A
+b11 O
+b100 P
+1!
+b100 a
+1c
+b11 l
+#95
+0!
+#100
+0@
+1A
+b10 O
+1!
+0c
+b10 l
+#105
+0!
+#110
+1@
+0A
+b11 O
+b11 P
+1!
+b11 a
+1c
+b11 l
+#115
+0!
+#120
+0@
+1A
+b10 O
+1!
+0b
+0c
+b10 l
+#125
+0!
+#130
+1@
+0A
+b11 O
+b10 P
+1!
+b10 a
+1c
+b11 l
+#135
+0!
+#140
+0@
+1A
+b10 O
+1!
+0c
+b10 l
+#145
+0!
+#150
+1@
+0A
+b11 O
+b1 P
+1!
+b1 a
+1c
+b11 l
+#155
+0!
+#160
+0@
+1A
+b10 O
+1!
+1b
+0c
+b10 l
+#165
+0!
+#170
+1@
+0A
+b11 O
+b0 P
+1!
+b0 a
+1c
+b11 l
+#175
+0!
+#180
+0@
+1A
+b10 O
+1!
+0b
+0c
+b10 l
+#185
+0!
+#190
+0A
+1B
+b11 O
+b11111111111111111111111111111111 P
+1!
+b11111111111111111111111111111111 a
+1c
+b11 l
+#195
+0!
+#200
+0B
+1C
+b100 O
+1!
+1b
+b100 l
+#205
+0!
+#210
+0C
+1D
+b101 O
+1!
+b101 l
+1o
+#215
+0!
+#220
+1$
+1:
+1=
+0D
+1G
+1H
+1N
+b110 O
+b111 P
+1!
+b111 a
+b110 l
+#225
+0!
+#230
+0$
+x:
+0=
+1?
+b100001 E
+1L
+0N
+b0 O
+1g
+1h
+1!
+19
+b10 ;
+1e
+b0 l
+b100001 p
+#235
+0!
+#240
+0?
+1@
+0G
+0H
+1K
+0L
+b1 O
+xg
+xh
+1!
+09
+0e
+1f
+b1 l
+0o
+#245
+0!
+#250
+0@
+1A
+0K
+b10 O
+1!
+0b
+0c
+0f
+b10 l
+#255
+0!
+#260
+1@
+0A
+b11 O
+b110 P
+1!
+b110 a
+1c
+b11 l
+#265
+0!
+#270
+0@
+1A
+b10 O
+1!
+0c
+b10 l
+#275
+0!
+#280
+1@
+0A
+b11 O
+b101 P
+1!
+b101 a
+1c
+b11 l
+#285
+0!
+#290
+0@
+1A
+b10 O
+1!
+1b
+0c
+b10 l
+#295
+0!
+#300
+1@
+0A
+b11 O
+b100 P
+1!
+b100 a
+1c
+b11 l
+#305
+0!
+#310
+0@
+1A
+b10 O
+1!
+0b
+0c
+b10 l
+#315
+0!
+#320
+1@
+0A
+b11 O
+b11 P
+1!
+b11 a
+1c
+b11 l
+#325
+0!
+#330
+0@
+1A
+b10 O
+1!
+0c
+b10 l
+#335
+0!
+#340
+1@
+0A
+b11 O
+b10 P
+1!
+b10 a
+1c
+b11 l
+#345
+0!
+#350
+0@
+1A
+b10 O
+1!
+0c
+b10 l
+#355
+0!
+#360
+1@
+0A
+b11 O
+b1 P
+1!
+b1 a
+1c
+b11 l
+#365
+0!
+#370
+0@
+1A
+b10 O
+1!
+0c
+b10 l
+#375
+0!
+#380
+1@
+0A
+b11 O
+b0 P
+1!
+b0 a
+1c
+b11 l
+#385
+0!
+#390
+0@
+1A
+b10 O
+1!
+1b
+0c
+b10 l
+#395
+0!
+#400
+0A
+1B
+b11 O
+b11111111111111111111111111111111 P
+1!
+b11111111111111111111111111111111 a
+1c
+b11 l
+#405
+0!
+#410
+0B
+1C
+b100 O
+1!
+b100 l
+#415
+0!
+#420
+0C
+1D
+b101 O
+1!
+b101 l
+1o
+#425
+0!
+#430
+1%
+1:
+1=
+0D
+1G
+1H
+1N
+b110 O
+b111 P
+1!
+b111 a
+b110 l
+#435
+0!
+#440
+0%
+1?
+b1101 E
+1L
+0N
+b0 O
+1g
+1h
+1!
+19
+b11 ;
+1e
+b0 l
+b1101 p
+#445
+0!

@@ -1,0 +1,3 @@
+/home/lzj/bsvsrc/src/0.MyProject/build/CMakeFiles/top.exe.dir
+/home/lzj/bsvsrc/src/0.MyProject/build/CMakeFiles/edit_cache.dir
+/home/lzj/bsvsrc/src/0.MyProject/build/CMakeFiles/rebuild_cache.dir

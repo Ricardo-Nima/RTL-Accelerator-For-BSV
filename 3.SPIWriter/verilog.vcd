@@ -1,0 +1,1054 @@
+$date
+	Wed Jan  4 17:27:21 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 3 ! \spi_writer$spi [2:0] $end
+$var wire 8 " \spi_writer$out [7:0] $end
+$var wire 1 # \spi_writer$RDY_write $end
+$var reg 1 $ CLK $end
+$var reg 1 % RST_N $end
+$var reg 1 & \spi_writer$EN_write $end
+$var reg 8 ' \spi_writer$write_data [7:0] $end
+$scope module spi_writer $end
+$var wire 1 $ CLK $end
+$var wire 1 & EN_write $end
+$var wire 1 ( RDY_out $end
+$var wire 1 # RDY_write $end
+$var wire 1 % RST_N $end
+$var wire 1 ) WILL_FIRE_RL_spiFsm_action_l25c13 $end
+$var wire 1 * WILL_FIRE_RL_spiFsm_action_l27c13 $end
+$var wire 1 + WILL_FIRE_RL_spiFsm_action_l36c15 $end
+$var wire 1 , WILL_FIRE_RL_spiFsm_fsm_start $end
+$var wire 1 - WILL_FIRE_RL_spiFsm_idle_l24c7 $end
+$var wire 1 . \cnt$EN $end
+$var wire 1 / \mosi$D_IN $end
+$var wire 1 0 \mosi$EN $end
+$var wire 8 1 out [7:0] $end
+$var wire 1 2 \sck$EN $end
+$var wire 1 3 spiFsm_abort_whas_AND_spiFsm_abort_wget_OR_spi_ETC___d60 $end
+$var wire 1 4 \spiFsm_start_reg$EN $end
+$var wire 1 5 \spiFsm_start_reg_1$D_IN $end
+$var wire 1 6 \spiFsm_start_reg_1$EN $end
+$var wire 1 7 \spiFsm_start_wire$whas $end
+$var wire 1 8 \spiFsm_state_can_overlap$D_IN $end
+$var wire 1 9 \spiFsm_state_can_overlap$EN $end
+$var wire 1 : \spiFsm_state_fired$D_IN $end
+$var wire 1 ; \spiFsm_state_fired$EN $end
+$var wire 1 < \spiFsm_state_mkFSMstate$EN $end
+$var wire 1 = \spiFsm_state_set_pw$whas $end
+$var wire 1 > \ss$EN $end
+$var wire 1 ? \wdata$EN $end
+$var wire 8 @ write_data [7:0] $end
+$var wire 8 A \wdata$D_IN [7:0] $end
+$var wire 1 B \ss$D_IN $end
+$var wire 1 C \spiFsm_start_reg$D_IN $end
+$var wire 3 D spi [2:0] $end
+$var wire 1 E \sck$D_IN $end
+$var wire 32 F \cnt$D_IN [31:0] $end
+$var wire 1 G \MUX_mosi$write_1__VAL_1 $end
+$var wire 32 H \MUX_cnt$write_1__VAL_1 [31:0] $end
+$var reg 32 I cnt [31:0] $end
+$var reg 1 J mosi $end
+$var reg 1 K sck $end
+$var reg 1 L spiFsm_start_reg $end
+$var reg 1 M spiFsm_start_reg_1 $end
+$var reg 1 N spiFsm_state_can_overlap $end
+$var reg 1 O spiFsm_state_fired $end
+$var reg 4 P spiFsm_state_mkFSMstate [3:0] $end
+$var reg 4 Q \spiFsm_state_mkFSMstate$D_IN [3:0] $end
+$var reg 1 R ss $end
+$var reg 8 S wdata [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10101010 S
+0R
+b1010 Q
+b1010 P
+0O
+0N
+0M
+0L
+0K
+0J
+b10101010101010101010101010101010 I
+b10101010101010101010101010101001 H
+0G
+b111 F
+1E
+b0 D
+1C
+1B
+bx A
+bx @
+1?
+0>
+0=
+0<
+1;
+0:
+19
+08
+07
+16
+05
+14
+03
+02
+b10101010 1
+00
+1/
+0.
+0-
+0,
+0+
+0*
+0)
+1(
+bx '
+1&
+0%
+x$
+0#
+b10101010 "
+b0 !
+$end
+#1
+1#
+13
+18
+b0 "
+b0 1
+b0 S
+1R
+b0 P
+1N
+1K
+b111 !
+b111 D
+1J
+b110 H
+b111 I
+1$
+#2
+b1110010 A
+b1100101 '
+b1100101 @
+1%
+#5
+0$
+#10
+1<
+1:
+1=
+1>
+b1 Q
+0B
+1)
+15
+17
+0#
+0C
+1,
+b1110010 "
+b1110010 1
+b1110010 S
+1L
+1$
+#15
+0$
+#20
+10
+12
+0/
+1:
+1=
+0>
+b10 Q
+0E
+1*
+1B
+0)
+03
+05
+07
+04
+0#
+1C
+0,
+b11 !
+b11 D
+0R
+b1 P
+1O
+1M
+0L
+1$
+0?
+0&
+#25
+0$
+#30
+00
+b11 Q
+1/
+1E
+0*
+b110 F
+1.
+b10 P
+0M
+0K
+b0 !
+b0 D
+0J
+1$
+#35
+0$
+#40
+1<
+10
+1:
+1=
+0E
+1*
+b10 Q
+0.
+12
+b111 F
+1G
+b11 P
+b10 !
+b10 D
+1K
+b101 H
+b110 I
+1$
+#45
+0$
+#50
+00
+b11 Q
+1E
+0*
+b101 F
+1.
+b10 P
+0K
+b1 !
+b1 D
+1J
+1$
+#55
+0$
+#60
+1<
+10
+1:
+1=
+0E
+1*
+b10 Q
+0.
+12
+b111 F
+b11 P
+b11 !
+b11 D
+1K
+b100 H
+b101 I
+1$
+#65
+0$
+#70
+00
+b11 Q
+1E
+0*
+b100 F
+1.
+b10 P
+b1 !
+b1 D
+0K
+1$
+#75
+0$
+#80
+1<
+10
+1:
+1=
+0E
+1*
+b10 Q
+0.
+12
+b111 F
+b11 P
+b11 !
+b11 D
+1K
+b11 H
+b100 I
+1$
+#85
+0$
+#90
+00
+b11 Q
+1E
+0*
+b11 F
+1.
+b10 P
+b1 !
+b1 D
+0K
+1$
+#95
+0$
+#100
+1<
+10
+0/
+1:
+1=
+0E
+1*
+b10 Q
+0.
+12
+b111 F
+0G
+b11 P
+b11 !
+b11 D
+1K
+b10 H
+b11 I
+1$
+#105
+0$
+#110
+00
+b11 Q
+1/
+1E
+0*
+b10 F
+1.
+b10 P
+0K
+b0 !
+b0 D
+0J
+1$
+#115
+0$
+#120
+1<
+10
+0/
+1:
+1=
+0E
+1*
+b10 Q
+0.
+12
+b111 F
+b11 P
+b10 !
+b10 D
+1K
+b1 H
+b10 I
+1$
+#125
+0$
+#130
+00
+b11 Q
+1/
+1E
+0*
+b1 F
+1.
+b10 P
+b0 !
+b0 D
+0K
+1$
+#135
+0$
+#140
+1<
+10
+1:
+1=
+0E
+1*
+b10 Q
+0.
+12
+b111 F
+1G
+b11 P
+b10 !
+b10 D
+1K
+b0 H
+b1 I
+1$
+#145
+0$
+#150
+00
+b11 Q
+1E
+0*
+b0 F
+1.
+b10 P
+0K
+b1 !
+b1 D
+1J
+1$
+#155
+0$
+#160
+1<
+10
+0/
+1:
+1=
+0E
+1*
+b10 Q
+0.
+12
+b111 F
+0G
+b11 P
+b11 !
+b11 D
+1K
+b11111111111111111111111111111111 H
+b0 I
+1$
+#165
+0$
+#170
+00
+b11 Q
+1/
+1E
+0*
+b11111111111111111111111111111111 F
+1.
+b10 P
+0K
+b0 !
+b0 D
+0J
+1$
+#175
+0$
+#180
+1:
+1=
+10
+1+
+b100 Q
+0.
+02
+b111 F
+b11 P
+b10 !
+b10 D
+1K
+b11111111111111111111111111111110 H
+b11111111111111111111111111111111 I
+1$
+#185
+0$
+#190
+00
+b101 Q
+0+
+1>
+b100 P
+b11 !
+b11 D
+1J
+1$
+#195
+0$
+#200
+1:
+1=
+b110 Q
+1.
+0>
+b111 !
+b111 D
+1R
+b101 P
+1$
+#205
+0$
+#210
+1:
+1=
+1#
+13
+b0 Q
+1-
+0.
+1<
+b110 P
+b110 H
+b111 I
+1$
+#215
+0$
+#220
+0:
+0=
+0<
+b1010 Q
+0-
+b0 P
+1$
+#225
+14
+0$
+1?
+1&
+b10111 A
+b1010 '
+b1010 @
+#230
+1<
+1:
+1=
+1>
+b1 Q
+0B
+1)
+15
+17
+0#
+0C
+1,
+b10111 "
+b10111 1
+b10111 S
+0O
+1L
+1$
+#235
+0$
+#240
+10
+12
+0/
+1:
+1=
+0>
+b10 Q
+0E
+1*
+1B
+0)
+03
+05
+07
+0#
+1C
+0,
+b11 !
+b11 D
+0R
+b1 P
+1O
+1M
+0L
+1$
+#245
+0$
+#250
+00
+b11 Q
+1/
+1E
+0*
+b110 F
+1.
+b10 P
+0M
+1L
+0K
+b0 !
+b0 D
+0J
+1$
+#255
+0$
+#260
+1<
+10
+0/
+1:
+1=
+0E
+1*
+b10 Q
+0.
+12
+b111 F
+b11 P
+b10 !
+b10 D
+1K
+b101 H
+b110 I
+1$
+#265
+0$
+#270
+00
+b11 Q
+1/
+1E
+0*
+b101 F
+1.
+b10 P
+b0 !
+b0 D
+0K
+1$
+#275
+0$
+#280
+1<
+10
+0/
+1:
+1=
+0E
+1*
+b10 Q
+0.
+12
+b111 F
+b11 P
+b10 !
+b10 D
+1K
+b100 H
+b101 I
+1$
+#285
+0$
+#290
+00
+b11 Q
+1/
+1E
+0*
+b100 F
+1.
+b10 P
+b0 !
+b0 D
+0K
+1$
+#295
+0$
+#300
+1<
+10
+1:
+1=
+0E
+1*
+b10 Q
+0.
+12
+b111 F
+1G
+b11 P
+b10 !
+b10 D
+1K
+b11 H
+b100 I
+1$
+#305
+0$
+#310
+00
+b11 Q
+1E
+0*
+b11 F
+1.
+b10 P
+0K
+b1 !
+b1 D
+1J
+1$
+#315
+0$
+#320
+1<
+10
+0/
+1:
+1=
+0E
+1*
+b10 Q
+0.
+12
+b111 F
+0G
+b11 P
+b11 !
+b11 D
+1K
+b10 H
+b11 I
+1$
+#325
+0$
+#330
+00
+b11 Q
+1/
+1E
+0*
+b10 F
+1.
+b10 P
+0K
+b0 !
+b0 D
+0J
+1$
+#335
+0$
+#340
+1<
+10
+1:
+1=
+0E
+1*
+b10 Q
+0.
+12
+b111 F
+1G
+b11 P
+b10 !
+b10 D
+1K
+b1 H
+b10 I
+1$
+#345
+0$
+#350
+00
+b11 Q
+1E
+0*
+b1 F
+1.
+b10 P
+0K
+b1 !
+b1 D
+1J
+1$
+#355
+0$
+#360
+1<
+10
+1:
+1=
+0E
+1*
+b10 Q
+0.
+12
+b111 F
+b11 P
+b11 !
+b11 D
+1K
+b0 H
+b1 I
+1$
+#365
+0$
+#370
+00
+b11 Q
+1E
+0*
+b0 F
+1.
+b10 P
+b1 !
+b1 D
+0K
+1$
+#375
+0$
+#380
+1<
+10
+1:
+1=
+0E
+1*
+b10 Q
+0.
+12
+b111 F
+b11 P
+b11 !
+b11 D
+1K
+b11111111111111111111111111111111 H
+b0 I
+1$
+#385
+0$
+#390
+00
+b11 Q
+1E
+0*
+b11111111111111111111111111111111 F
+1.
+b10 P
+b1 !
+b1 D
+0K
+1$
+#395
+0$
+#400
+1:
+1=
+10
+1+
+b100 Q
+0.
+02
+b111 F
+0G
+b11 P
+b11 !
+b11 D
+1K
+b11111111111111111111111111111110 H
+b11111111111111111111111111111111 I
+1$
+#405
+0$
+#410
+00
+b101 Q
+0+
+1>
+b100 P
+1$
+#415
+0$
+#420
+1:
+1=
+b110 Q
+1.
+0>
+b111 !
+b111 D
+1R
+b101 P
+1$
+#425
+0$
+#430
+1>
+0B
+1)
+15
+17
+0C
+1,
+13
+b1 Q
+0-
+0.
+1<
+b110 P
+b110 H
+b111 I
+1$
+#435
+0$
+#440
+10
+12
+0/
+1:
+1=
+0>
+b10 Q
+0E
+1*
+1B
+0)
+03
+05
+07
+0#
+1C
+0,
+b11 !
+b11 D
+0R
+b1 P
+1M
+0L
+1$
+#445
+0$
+#450
+00
+b11 Q
+1/
+1E
+0*
+b110 F
+1.
+b10 P
+0M
+1L
+0K
+b0 !
+b0 D
+0J
+1$
+#455
+0$
+#460
+1<
+10
+0/
+1:
+1=
+0E
+1*
+b10 Q
+0.
+12
+b111 F
+b11 P
+b10 !
+b10 D
+1K
+b101 H
+b110 I
+1$
+#465
+0$
+#470
+00
+b11 Q
+1/
+1E
+0*
+b101 F
+1.
+b10 P
+b0 !
+b0 D
+0K
+1$
+#475
+0$
+#480
+1<
+10
+0/
+1:
+1=
+0E
+1*
+b10 Q
+0.
+12
+b111 F
+b11 P
+b10 !
+b10 D
+1K
+b100 H
+b101 I
+1$
+#485
+0$
+#490
+00
+b11 Q
+1/
+1E
+0*
+b100 F
+1.
+b10 P
+b0 !
+b0 D
+0K
+1$
+#495
+0$
+#500
+1<
+10
+1:
+1=
+0E
+1*
+b10 Q
+0.
+12
+b111 F
+1G
+b11 P
+b10 !
+b10 D
+1K
+b11 H
+b100 I
+1$

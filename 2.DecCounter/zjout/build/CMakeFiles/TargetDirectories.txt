@@ -1,0 +1,3 @@
+/home/jason/bsvsrc/src/2.DecCounter/zjout/build/CMakeFiles/top.exe.dir
+/home/jason/bsvsrc/src/2.DecCounter/zjout/build/CMakeFiles/edit_cache.dir
+/home/jason/bsvsrc/src/2.DecCounter/zjout/build/CMakeFiles/rebuild_cache.dir

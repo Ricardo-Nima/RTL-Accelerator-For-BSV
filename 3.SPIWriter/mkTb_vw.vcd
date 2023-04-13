@@ -1,0 +1,1191 @@
+$date
+	Wed Jan  4 17:18:02 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module main $end
+$var reg 1 ! CLK $end
+$var reg 1 " RST $end
+$var reg 32 # cycle [31:0] $end
+$var reg 1 $ do_cycles $end
+$var reg 1 % do_fsdb $end
+$var reg 1 & do_fst $end
+$var reg 1 ' do_vcd $end
+$var reg 2048 ( filename [2048:1] $end
+$scope module top $end
+$var wire 1 ! CLK $end
+$var wire 1 ) \MUX_start_reg$write_1__SEL_2 $end
+$var wire 1 " RST_N $end
+$var wire 1 * WILL_FIRE_RL_action_l15c20 $end
+$var wire 1 + WILL_FIRE_RL_action_l16c20 $end
+$var wire 1 , WILL_FIRE_RL_action_l17c20 $end
+$var wire 1 - WILL_FIRE_RL_fsm_start $end
+$var wire 1 . WILL_FIRE_RL_idle_l14c7 $end
+$var wire 1 / abort_whas_AND_abort_wget_OR_state_mkFSMstate__ETC___d49 $end
+$var wire 1 0 \running$D_IN $end
+$var wire 1 1 \running$EN $end
+$var wire 1 2 \spi_writer$EN_write $end
+$var wire 1 3 \start_reg$EN $end
+$var wire 1 4 \start_reg_1$D_IN $end
+$var wire 1 5 \start_reg_1$EN $end
+$var wire 1 6 \start_wire$whas $end
+$var wire 1 7 \state_can_overlap$D_IN $end
+$var wire 1 8 \state_can_overlap$EN $end
+$var wire 1 9 \state_fired$D_IN $end
+$var wire 1 : \state_fired$EN $end
+$var wire 1 ; \state_mkFSMstate$EN $end
+$var wire 1 < \state_set_pw$whas $end
+$var wire 1 = \start_reg$D_IN $end
+$var wire 3 > \spi_writer$spi [2:0] $end
+$var wire 8 ? \spi_writer$out [7:0] $end
+$var wire 1 @ \spi_writer$RDY_write $end
+$var reg 1 A running $end
+$var reg 8 B \spi_writer$write_data [7:0] $end
+$var reg 1 C start_reg $end
+$var reg 1 D start_reg_1 $end
+$var reg 1 E state_can_overlap $end
+$var reg 1 F state_fired $end
+$var reg 3 G state_mkFSMstate [2:0] $end
+$var reg 3 H \state_mkFSMstate$D_IN [2:0] $end
+$scope module spi_writer $end
+$var wire 1 ! CLK $end
+$var wire 1 2 EN_write $end
+$var wire 1 I RDY_out $end
+$var wire 1 @ RDY_write $end
+$var wire 1 " RST_N $end
+$var wire 1 J WILL_FIRE_RL_spiFsm_action_l25c13 $end
+$var wire 1 K WILL_FIRE_RL_spiFsm_action_l27c13 $end
+$var wire 1 L WILL_FIRE_RL_spiFsm_action_l36c15 $end
+$var wire 1 M WILL_FIRE_RL_spiFsm_fsm_start $end
+$var wire 1 N WILL_FIRE_RL_spiFsm_idle_l24c7 $end
+$var wire 1 O \cnt$EN $end
+$var wire 1 P \mosi$D_IN $end
+$var wire 1 Q \mosi$EN $end
+$var wire 8 R out [7:0] $end
+$var wire 1 S \sck$EN $end
+$var wire 1 T spiFsm_abort_whas_AND_spiFsm_abort_wget_OR_spi_ETC___d60 $end
+$var wire 1 U \spiFsm_start_reg$EN $end
+$var wire 1 V \spiFsm_start_reg_1$D_IN $end
+$var wire 1 W \spiFsm_start_reg_1$EN $end
+$var wire 1 X \spiFsm_start_wire$whas $end
+$var wire 1 Y \spiFsm_state_can_overlap$D_IN $end
+$var wire 1 Z \spiFsm_state_can_overlap$EN $end
+$var wire 1 [ \spiFsm_state_fired$D_IN $end
+$var wire 1 \ \spiFsm_state_fired$EN $end
+$var wire 1 ] \spiFsm_state_mkFSMstate$EN $end
+$var wire 1 ^ \spiFsm_state_set_pw$whas $end
+$var wire 1 _ \ss$EN $end
+$var wire 1 ` \wdata$EN $end
+$var wire 8 a write_data [7:0] $end
+$var wire 8 b \wdata$D_IN [7:0] $end
+$var wire 1 c \ss$D_IN $end
+$var wire 1 d \spiFsm_start_reg$D_IN $end
+$var wire 3 e spi [2:0] $end
+$var wire 1 f \sck$D_IN $end
+$var wire 32 g \cnt$D_IN [31:0] $end
+$var wire 1 h \MUX_mosi$write_1__VAL_1 $end
+$var wire 32 i \MUX_cnt$write_1__VAL_1 [31:0] $end
+$var reg 32 j cnt [31:0] $end
+$var reg 1 k mosi $end
+$var reg 1 l sck $end
+$var reg 1 m spiFsm_start_reg $end
+$var reg 1 n spiFsm_start_reg_1 $end
+$var reg 1 o spiFsm_state_can_overlap $end
+$var reg 1 p spiFsm_state_fired $end
+$var reg 4 q spiFsm_state_mkFSMstate [3:0] $end
+$var reg 4 r \spiFsm_state_mkFSMstate$D_IN [3:0] $end
+$var reg 1 s ss $end
+$var reg 8 t wdata [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10101010 t
+0s
+b1010 r
+b1010 q
+0p
+0o
+0n
+0m
+0l
+0k
+b10101010101010101010101010101010 j
+b10101010101010101010101010101001 i
+0h
+b111 g
+1f
+b0 e
+1d
+1c
+b10110111 b
+b10101010 a
+0`
+0_
+0^
+0]
+1\
+0[
+1Z
+0Y
+0X
+1W
+0V
+0U
+0T
+0S
+b10101010 R
+0Q
+1P
+0O
+0N
+0M
+0L
+0K
+0J
+1I
+b10 H
+b10 G
+0F
+0E
+0D
+0C
+b10101010 B
+0A
+0@
+b10101010 ?
+b0 >
+1=
+0<
+0;
+1:
+09
+18
+07
+06
+15
+04
+03
+02
+01
+10
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+b110010001110101011011010111000000101110011101100110001101100100 (
+1'
+0&
+0%
+0$
+b0 #
+0"
+x!
+$end
+#1
+13
+11
+1)
+1@
+1T
+1/
+1Y
+17
+b0 ?
+b0 R
+b0 t
+1s
+b0 q
+1o
+1l
+b111 >
+b111 e
+1k
+b110 i
+b111 j
+b0 G
+1E
+1!
+b1 #
+#2
+1"
+#5
+0!
+#10
+1;
+1U
+19
+1<
+1`
+12
+b1110010 b
+b1100101 B
+b1100101 a
+b1 H
+1*
+14
+16
+0=
+1-
+01
+0)
+1C
+1A
+1!
+#11
+b10 #
+#15
+0!
+#20
+1]
+09
+0<
+0;
+0`
+02
+1[
+1^
+1_
+b1 r
+0c
+1J
+b10 H
+1V
+1X
+0*
+b10110111 b
+b10101010 B
+b10101010 a
+0/
+04
+06
+03
+0@
+0d
+1M
+0+
+1=
+0-
+b1110010 ?
+b1110010 R
+b1110010 t
+1m
+b1 G
+1F
+1D
+0C
+1!
+#21
+b11 #
+#25
+0!
+#30
+09
+0<
+0;
+0`
+02
+1Q
+1S
+0P
+1[
+1^
+0_
+b10 r
+b10110111 b
+b10101010 B
+b10101010 a
+0f
+1K
+1c
+0J
+0T
+0+
+0V
+0X
+0U
+0@
+1d
+0M
+0F
+0D
+b11 >
+b11 e
+0s
+b1 q
+1p
+1n
+0m
+1!
+#31
+b100 #
+#35
+0!
+#40
+0Q
+b11 r
+1P
+1f
+0K
+b110 g
+1O
+b10 q
+0n
+0l
+b0 >
+b0 e
+0k
+1!
+#41
+b101 #
+#45
+0!
+#50
+1]
+1Q
+1[
+1^
+0f
+1K
+b10 r
+0O
+1S
+b111 g
+1h
+b11 q
+b10 >
+b10 e
+1l
+b101 i
+b110 j
+1!
+#51
+b110 #
+#55
+0!
+#60
+0Q
+b11 r
+1f
+0K
+b101 g
+1O
+b10 q
+0l
+b1 >
+b1 e
+1k
+1!
+#61
+b111 #
+#65
+0!
+#70
+1]
+1Q
+1[
+1^
+0f
+1K
+b10 r
+0O
+1S
+b111 g
+b11 q
+b11 >
+b11 e
+1l
+b100 i
+b101 j
+1!
+#71
+b1000 #
+#75
+0!
+#80
+0Q
+b11 r
+1f
+0K
+b100 g
+1O
+b10 q
+b1 >
+b1 e
+0l
+1!
+#81
+b1001 #
+#85
+0!
+#90
+1]
+1Q
+1[
+1^
+0f
+1K
+b10 r
+0O
+1S
+b111 g
+b11 q
+b11 >
+b11 e
+1l
+b11 i
+b100 j
+1!
+#91
+b1010 #
+#95
+0!
+#100
+0Q
+b11 r
+1f
+0K
+b11 g
+1O
+b10 q
+b1 >
+b1 e
+0l
+1!
+#101
+b1011 #
+#105
+0!
+#110
+1]
+1Q
+0P
+1[
+1^
+0f
+1K
+b10 r
+0O
+1S
+b111 g
+0h
+b11 q
+b11 >
+b11 e
+1l
+b10 i
+b11 j
+1!
+#111
+b1100 #
+#115
+0!
+#120
+0Q
+b11 r
+1P
+1f
+0K
+b10 g
+1O
+b10 q
+0l
+b0 >
+b0 e
+0k
+1!
+#121
+b1101 #
+#125
+0!
+#130
+1]
+1Q
+0P
+1[
+1^
+0f
+1K
+b10 r
+0O
+1S
+b111 g
+b11 q
+b10 >
+b10 e
+1l
+b1 i
+b10 j
+1!
+#131
+b1110 #
+#135
+0!
+#140
+0Q
+b11 r
+1P
+1f
+0K
+b1 g
+1O
+b10 q
+b0 >
+b0 e
+0l
+1!
+#141
+b1111 #
+#145
+0!
+#150
+1]
+1Q
+1[
+1^
+0f
+1K
+b10 r
+0O
+1S
+b111 g
+1h
+b11 q
+b10 >
+b10 e
+1l
+b0 i
+b1 j
+1!
+#151
+b10000 #
+#155
+0!
+#160
+0Q
+b11 r
+1f
+0K
+b0 g
+1O
+b10 q
+0l
+b1 >
+b1 e
+1k
+1!
+#161
+b10001 #
+#165
+0!
+#170
+1]
+1Q
+0P
+1[
+1^
+0f
+1K
+b10 r
+0O
+1S
+b111 g
+0h
+b11 q
+b11 >
+b11 e
+1l
+b11111111111111111111111111111111 i
+b0 j
+1!
+#171
+b10010 #
+#175
+0!
+#180
+0Q
+b11 r
+1P
+1f
+0K
+b11111111111111111111111111111111 g
+1O
+b10 q
+0l
+b0 >
+b0 e
+0k
+1!
+#181
+b10011 #
+#185
+0!
+#190
+1[
+1^
+1Q
+1L
+b100 r
+0O
+0S
+b111 g
+b11 q
+b10 >
+b10 e
+1l
+b11111111111111111111111111111110 i
+b11111111111111111111111111111111 j
+1!
+#191
+b10100 #
+#195
+0!
+#200
+0Q
+b101 r
+0L
+1_
+b100 q
+b11 >
+b11 e
+1k
+1!
+#201
+b10101 #
+#205
+0!
+#210
+1[
+1^
+b110 r
+1O
+0_
+b111 >
+b111 e
+1s
+b101 q
+1!
+#211
+b10110 #
+#215
+0!
+#220
+1U
+1[
+1^
+19
+1<
+1;
+1`
+12
+b100001 b
+b10100 B
+b10100 a
+1+
+1@
+1T
+b0 r
+1N
+0O
+1]
+b110 q
+b110 i
+b111 j
+1!
+#221
+b10111 #
+#225
+0!
+#230
+1]
+1_
+09
+0<
+0;
+0`
+02
+0c
+1J
+b10110111 b
+b10101010 B
+b10101010 a
+1V
+1X
+0+
+b1 r
+0N
+0@
+0d
+1M
+b10 G
+1F
+b100001 ?
+b100001 R
+b100001 t
+b0 q
+1m
+1!
+#231
+b11000 #
+#235
+0!
+#240
+09
+0<
+0`
+02
+1Q
+1S
+0P
+1[
+1^
+0_
+b10 r
+0;
+b10110111 b
+b10101010 B
+b10101010 a
+b10 H
+0f
+1K
+1c
+0J
+0T
+0,
+0V
+0X
+0U
+0@
+1d
+0M
+b11 >
+b11 e
+0s
+b1 q
+1n
+0m
+0F
+1!
+#241
+b11001 #
+#245
+0!
+#250
+0Q
+b11 r
+1P
+1f
+0K
+b110 g
+1O
+b10 q
+0n
+0l
+b0 >
+b0 e
+0k
+1!
+#251
+b11010 #
+#255
+0!
+#260
+1]
+1Q
+0P
+1[
+1^
+0f
+1K
+b10 r
+0O
+1S
+b111 g
+b11 q
+b10 >
+b10 e
+1l
+b101 i
+b110 j
+1!
+#261
+b11011 #
+#265
+0!
+#270
+0Q
+b11 r
+1P
+1f
+0K
+b101 g
+1O
+b10 q
+b0 >
+b0 e
+0l
+1!
+#271
+b11100 #
+#275
+0!
+#280
+1]
+1Q
+1[
+1^
+0f
+1K
+b10 r
+0O
+1S
+b111 g
+1h
+b11 q
+b10 >
+b10 e
+1l
+b100 i
+b101 j
+1!
+#281
+b11101 #
+#285
+0!
+#290
+0Q
+b11 r
+1f
+0K
+b100 g
+1O
+b10 q
+0l
+b1 >
+b1 e
+1k
+1!
+#291
+b11110 #
+#295
+0!
+#300
+1]
+1Q
+0P
+1[
+1^
+0f
+1K
+b10 r
+0O
+1S
+b111 g
+0h
+b11 q
+b11 >
+b11 e
+1l
+b11 i
+b100 j
+1!
+#301
+b11111 #
+#305
+0!
+#310
+0Q
+b11 r
+1P
+1f
+0K
+b11 g
+1O
+b10 q
+0l
+b0 >
+b0 e
+0k
+1!
+#311
+b100000 #
+#315
+0!
+#320
+1]
+1Q
+0P
+1[
+1^
+0f
+1K
+b10 r
+0O
+1S
+b111 g
+b11 q
+b10 >
+b10 e
+1l
+b10 i
+b11 j
+1!
+#321
+b100001 #
+#325
+0!
+#330
+0Q
+b11 r
+1P
+1f
+0K
+b10 g
+1O
+b10 q
+b0 >
+b0 e
+0l
+1!
+#331
+b100010 #
+#335
+0!
+#340
+1]
+1Q
+0P
+1[
+1^
+0f
+1K
+b10 r
+0O
+1S
+b111 g
+b11 q
+b10 >
+b10 e
+1l
+b1 i
+b10 j
+1!
+#341
+b100011 #
+#345
+0!
+#350
+0Q
+b11 r
+1P
+1f
+0K
+b1 g
+1O
+b10 q
+b0 >
+b0 e
+0l
+1!
+#351
+b100100 #
+#355
+0!
+#360
+1]
+1Q
+0P
+1[
+1^
+0f
+1K
+b10 r
+0O
+1S
+b111 g
+b11 q
+b10 >
+b10 e
+1l
+b0 i
+b1 j
+1!
+#361
+b100101 #
+#365
+0!
+#370
+0Q
+b11 r
+1P
+1f
+0K
+b0 g
+1O
+b10 q
+b0 >
+b0 e
+0l
+1!
+#371
+b100110 #
+#375
+0!
+#380
+1]
+1Q
+1[
+1^
+0f
+1K
+b10 r
+0O
+1S
+b111 g
+1h
+b11 q
+b10 >
+b10 e
+1l
+b11111111111111111111111111111111 i
+b0 j
+1!
+#381
+b100111 #
+#385
+0!
+#390
+0Q
+b11 r
+1f
+0K
+b11111111111111111111111111111111 g
+1O
+b10 q
+0l
+b1 >
+b1 e
+1k
+1!
+#391
+b101000 #
+#395
+0!
+#400
+1[
+1^
+1Q
+1L
+b100 r
+0O
+0S
+b111 g
+0h
+b11 q
+b11 >
+b11 e
+1l
+b11111111111111111111111111111110 i
+b11111111111111111111111111111111 j
+1!
+#401
+b101001 #
+#405
+0!
+#410
+0Q
+b101 r
+0L
+1_
+b100 q
+1!
+#411
+b101010 #
+#415
+0!
+#420
+1[
+1^
+b110 r
+1O
+0_
+b111 >
+b111 e
+1s
+b101 q
+1!
+#421
+b101011 #
+#425
+0!
+#430
+19
+1<
+1U
+1[
+1^
+1`
+12
+1;
+b1101 b
+b0 B
+b0 a
+b11 H
+1,
+1@
+1T
+b0 r
+1N
+0O
+1]
+b110 q
+b110 i
+b111 j
+1!
+#431
+b101100 #
+#435
+0!
+#440
+1]
+1_
+0c
+1J
+0`
+02
+1V
+1X
+1;
+b10110111 b
+b10101010 B
+b10101010 a
+b0 H
+1/
+b1 r
+0N
+0@
+0d
+1M
+1.
+0,
+b1101 ?
+b1101 R
+b1101 t
+b0 q
+1m
+b11 G
+1F
+1!
+#441
+b101101 #
+#445
+0!
