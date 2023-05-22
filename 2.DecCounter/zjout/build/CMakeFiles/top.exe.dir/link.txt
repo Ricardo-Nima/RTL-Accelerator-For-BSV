@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/top.exe.dir/main.cpp.o CMakeFiles/top.exe.dir/mkDecCounter.cxx.o CMakeFiles/top.exe.dir/mkSPIWriter.cxx.o CMakeFiles/top.exe.dir/mkTb.cxx.o CMakeFiles/top.exe.dir/model_mkTb.cxx.o -o top.exe   -L/usr/local/systemc-2.3.3/lib-linux64  -L/opt/bsc/lib/Bluesim  -Wl,-rpath,/usr/local/systemc-2.3.3/lib-linux64:/opt/bsc/lib/Bluesim -lbskernel -lbsprim -lpthread 
